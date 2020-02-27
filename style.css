@@ -1,0 +1,79 @@
+* {
+    box-sizing: content-box;
+}
+
+.container {
+    margin:auto;
+}
+
+#rst {
+    margin: 3%;
+}
+
+#players {
+    margin: 3%;
+}
+
+#inputcont {
+    margin: 1% 0 0 0;
+}
+
+.jumbotron {
+    color: #EFEFEF;
+}
+
+.jumbotron {
+    border-radius: 0 !important;
+}
+
+#p1 {
+ background-color: #E59500;
+ color: #EFEFEF
+}
+
+#p2 {
+    background-color: #840032;
+    color: #EFEFEF
+}
+
+#reset {
+    background-color:#002642;
+    color: #EFEFEF
+}
+
+.btn:focus {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+input{
+    text-align: center;
+ }
+
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+ input {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    box-shadow: inset 0 -1px 0 rgba(dark,.3);
+    box-shadow: inset 0 -1px 0;
+ }
+
+input:focus {
+    background: rgba(dark,.05);
+    outline: none;
+    box-shadow: inset 0 -1.5px 0;   
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
