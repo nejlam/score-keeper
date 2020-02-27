@@ -11,25 +11,24 @@ var numInput = document.querySelector("input")
 var winner = document.querySelector("#winner")
 
 p1Button.addEventListener("click", function(){
-    if(!gameOver) {
+    if(!gameOver && winningScoreDisplay.value!==isNaN) {
         p1Score++
         if(p1Score === winningScore){
             gameOver = true
-            winner.textContent = "The winner is Player 1!"
+            winner.textContent = "Player 1!"
             //p1Display.classList.add("winner")
         }
         p1Display.textContent = p1Score;
-    }
-       
+    }   
 })
 
 p2Button.addEventListener("click", function(){
-    if(!gameOver){
+    if(!gameOver && winningScoreDisplay.value!==isNaN){
         p2Score++
         if(p2Score === winningScore){
             gameOver = true
             //p2Display.classList.add("winner")
-            winner.textContent = "The winner is Player 2!"
+            winner.textContent = "Player 2!"
         }
         p2Display.textContent = p2Score;
     }
@@ -45,7 +44,7 @@ function resetf(){
     gameOver = false;
     //p1Display.classList.remove("winner")
     //p2Display.classList.remove("winner")
-    winner.textContent = ""
+    winner.textContent = "The Winner is..."
 }
 
 reset.addEventListener("click", resetf)
@@ -57,12 +56,16 @@ numInput.addEventListener("change", function(){
 })
 
 
-// disabling entering negative numbers
+// disabled entering negative numbers
 var number = document.getElementById('inputcont');
 number.onkeydown = function(e) {
     if(!((e.keyCode > 95 && e.keyCode < 106)
       || (e.keyCode > 47 && e.keyCode < 58) 
-      || e.keyCode == 8)) {
+      || e.keyCode == 8)
+      || e.keyCode == 48) {
         return false;
     }
 }
+
+//add input buttons
+//add optional players
