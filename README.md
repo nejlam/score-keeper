@@ -1,2 +1,5 @@
 # score-keeper
-a simple score-keeping game
+a simple score-keeper
+
+HTML, CSS and JavaScript
+
