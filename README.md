@@ -1,5 +1,5 @@
 # score-keeper
 a simple score-keeper
 
-HTML, CSS and JavaScript
+This app is deployed to Heroku and available on the link - [Score Keeper](https://score-keeper-heroku.herokuapp.com/)
 
